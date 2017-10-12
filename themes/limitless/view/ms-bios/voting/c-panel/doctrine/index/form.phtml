@@ -1,0 +1,79 @@
+<?php
+/**
+ * @access protected
+ * @author Judzhin Miles <info[woof-woof]msbios.com>
+ */
+
+namespace OpenPower\CPanel;
+
+// Add jses
+$this->headScript()
+    ->prependFile($this->basePath('limitless/assets/js/plugins/forms/inputs/formatter.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/forms/styling/uniform.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/pickers/daterangepicker.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/ui/moment/moment.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/notifications/jgrowl.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/uploaders/fileinput.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/notifications/jgrowl.min.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/editors/wysihtml5/locales/bootstrap-wysihtml5.ua-UA.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/editors/wysihtml5/parsers.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/editors/wysihtml5/toolbar.js'))
+    ->prependFile($this->basePath('limitless/assets/js/plugins/editors/wysihtml5/wysihtml5.min.js'));
+
+/** @var \Zend\Form\Form $form */
+$form = $this->form;
+$form->prepare();
+?>
+
+    <div class="panel panel-flat">
+
+        <div class="panel-body">
+
+            <?= $this->form()->openTag($form->setAttributes([
+                'class' => 'form-horizontal',
+                'role' => 'form'
+            ])); ?>
+
+            <?= $this->partial('partial/element.phtml', [
+                'element' => $form->get('subject')
+                    ->setAttributes([
+                        'required' => 'required',
+                        'placeholder' => $this->translate('Enter Subject')
+                    ]),
+                'label' => $this->translate('Subject'),
+            ]); ?>
+
+            <div class="text-right">
+                <button type="reset" class="btn btn-default">Reset</button>
+                <button type="submit" class="btn btn-primary">
+                    Submit
+                    <i class="icon-arrow-right14 position-right"></i>
+                </button>
+            </div>
+
+            <?= $this->form()->closeTag(); ?>
+        </div>
+    </div>
+
+<?php $this->inlineScript()->captureStart(); ?>
+    $('[name="birthdate"]').formatter({
+    pattern: '{{9999}}-{{99}}-{{99}}'
+    });
+
+    $('[name="birthdate"]').daterangepicker({
+    singleDatePicker: true,
+    locale: {
+    format: 'YYYY-MM-DD'
+    },
+    });
+
+    $(".styled").uniform({
+    radioClass: 'choice'
+    });
+
+    $(".btn-remove-network").on('click', function() {
+    $("#" + $(this).attr('data-index')).remove();
+    });
+
+    $('.wysihtml5-default').wysihtml5();
+<?php $this->inlineScript()->captureEnd(); ?>
