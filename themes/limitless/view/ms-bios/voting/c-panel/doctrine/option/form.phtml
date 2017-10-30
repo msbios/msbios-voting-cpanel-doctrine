@@ -35,6 +35,16 @@ $form->prepare();
             ])); ?>
 
             <?= $this->partial('partial/element.phtml', [
+                'element' => $form->get('poll')
+                    ->setAttributes([
+                        'readonly' => 'readonly',
+                        'required' => 'required',
+                        'placeholder' => $this->translate('Enter poll')
+                    ]),
+                'label' => $this->translate('Poll'),
+            ]); ?>
+
+            <?= $this->partial('partial/element.phtml', [
                 'element' => $form->get('name')
                     ->setAttributes([
                         'required' => 'required',
@@ -44,14 +54,23 @@ $form->prepare();
             ]); ?>
 
             <?= $this->partial('partial/element.phtml', [
-                'element' => $form->get('poll')
+                'element' => $form->get('ponderability')
                     ->setAttributes([
-                        'readonly' => 'readonly',
                         'required' => 'required',
-                        'placeholder' => $this->translate('Enter poll')
+                        'placeholder' => $this->translate('Enter ponderability')
                     ]),
-                'label' => $this->translate('Poll'),
+                'label' => $this->translate('Ponderability'),
             ]); ?>
+
+            <?= $this->partial('partial/element.phtml', [
+                'element' => $form->get('priority')
+                    ->setAttributes([
+                        'placeholder' => $this->translate('Enter priority')
+                    ]),
+                'label' => $this->translate('Priority'),
+            ]); ?>
+
+
 
             <div class="text-right">
                 <button type="reset" class="btn btn-default">Reset</button>

@@ -73,6 +73,8 @@ $this->headScript()
                         <tr>
                             <th><?= $this->translate('Name'); ?></th>
                             <th><?= $this->translate('Poll'); ?></th>
+                            <th><?= $this->translate('Ponderability'); ?></th>
+                            <th><?= $this->translate('Priority'); ?></th>
                             <th><?= $this->translate('Total'); ?></th>
                             <th><?= $this->translate('Created At'); ?></th>
                             <th><?= $this->translate('Modified At'); ?></th>
@@ -88,6 +90,8 @@ $this->headScript()
                             <tr>
                                 <td><?= $this->escapeHtml($item->getName()); ?></td>
                                 <td><?= $this->escapeHtml($item->getPoll()->getSubject()); ?></td>
+                                <td><?= $this->escapeHtml($item->getPonderability()); ?></td>
+                                <td><?= $this->escapeHtml($item->getPriority()); ?></td>
                                 <td><?= $this->escapeHtml($item->getTotal()); ?></td>
                                 <td>
                                     <?= $this->dateFormat(

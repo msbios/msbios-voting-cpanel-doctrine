@@ -72,6 +72,7 @@ $this->headScript()
                         <thead>
                         <tr>
                             <th><?= $this->translate('Subject'); ?></th>
+                            <th><?= $this->translate('Code'); ?></th>
                             <th><?= $this->translate('Total'); ?></th>
                             <th><?= $this->translate('Created At'); ?></th>
                             <th><?= $this->translate('Modified At'); ?></th>
@@ -90,6 +91,7 @@ $this->headScript()
                                         <?= $this->escapeHtml($item->getSubject()); ?>
                                     </a>
                                 </td>
+                                <td><?= $this->escapeHtml($item->getCode()); ?></td>
                                 <td><?= $this->escapeHtml($item->getTotal()); ?></td>
                                 <td>
                                     <?= $this->dateFormat(

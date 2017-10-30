@@ -35,6 +35,15 @@ $form->prepare();
             ])); ?>
 
             <?= $this->partial('partial/element.phtml', [
+                'element' => $form->get('code')
+                    ->setAttributes([
+                        'required' => 'required',
+                        'placeholder' => $this->translate('Enter Code')
+                    ]),
+                'label' => $this->translate('Code'),
+            ]); ?>
+
+            <?= $this->partial('partial/element.phtml', [
                 'element' => $form->get('subject')
                     ->setAttributes([
                         'required' => 'required',

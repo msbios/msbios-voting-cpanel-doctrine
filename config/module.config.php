@@ -11,39 +11,21 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
 
-    'router' => [
-        'routes' => [
-            'cpanel' => [
-                'child_routes' => [
-                    'poll' => [
-                        'options' => [
-                            'defaults' => [
-                                'controller' => Controller\IndexController::class,
-                            ],
-                        ],
-                    ],
-                    'poll-option' => [
-                        'options' => [
-                            'defaults' => [
-                                'controller' => Controller\OptionController::class,
-                            ],
-                        ],
-                    ],
-                ],
-            ],
-        ],
-    ],
-
     'controllers' => [
         'factories' => [
             Controller\IndexController::class => InvokableFactory::class,
             Controller\OptionController::class => InvokableFactory::class,
         ],
+        'aliases' => [
+            \MSBios\Voting\CPanel\Controller\IndexController::class =>
+                Controller\IndexController::class,
+            \MSBios\Voting\CPanel\Controller\OptionController::class =>
+                Controller\OptionController::class
+        ]
     ],
 
     'form_elements' => [
         'aliases' => [
-            // Forms
             Controller\IndexController::class =>
                 \MSBios\Voting\Resource\Form\PollForm::class,
             Controller\OptionController::class =>
