@@ -6,6 +6,8 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
+        'Zend\Log',
+        'MSBios\Voting',
         'MSBios\Test',
         'Zend\Mvc\Console',
         'Zend\I18n',
@@ -51,6 +53,7 @@ return [
         'MSBios\Voting\CPanel\Doctrine',
         'DoctrineModule',
         'DoctrineORMModule',
+        'ZendDeveloperTools',
     ],
     // These are various options for the listeners attached to the ModuleManager
     'module_listener_options' => [

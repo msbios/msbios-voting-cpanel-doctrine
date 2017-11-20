@@ -24,13 +24,13 @@
     }
   },
   "require": {
+    "msbios/voting-cpanel": "^1.0"
   },
   "require-dev": {
     "msbios/portal-doctrine": "^1.0",
-    "msbios/voting-cpanel": "^1.0",
-    "msbios/voting-resource": "^1.0",
-    "msbios/voting-resource-doctrine": "^1.0",
-    "msbios/test": "^1.0"
+    "msbios/voting-doctrine": "^1.0",
+    "msbios/test": "^1.0",
+    "msbios/debug": "^1.0"
   },
   "scripts": {
     "cs-check": "phpcs",
