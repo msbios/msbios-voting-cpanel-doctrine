@@ -23,7 +23,7 @@ $this->headScript()
                 <p>
                     <?php if ($this->isAllowed($this->config->get('resource'), 'add')): ?>
                         <a href="<?= $this->url($this->config->get('route_name'), ['action' => 'add']); ?>"
-                           class="btn btn-info"><?= $this->translate('Create new vote'); ?></a>
+                           class="btn btn-info"><?= $this->translate('Create new poll'); ?></a>
                     <?php endif; ?>
                 </p>
             </div>
@@ -60,7 +60,7 @@ $this->headScript()
 
                             <?php if ($this->isAllowed($this->config->get('resource'), 'add')): ?>
                                 <a href="<?= $this->url($this->config->get('route_name'), ['action' => 'add']); ?>"
-                                   class="btn btn-success"><?= $this->translate('Create new person'); ?></a>
+                                   class="btn btn-success"><?= $this->translate('Create new poll'); ?></a>
                             <?php endif; ?>
                         </div>
                     </div>

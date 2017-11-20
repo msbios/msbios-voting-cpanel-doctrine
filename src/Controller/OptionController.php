@@ -33,9 +33,11 @@ class OptionController extends AbstractLazyActionController
      */
     public function onDispatch(MvcEvent $e)
     {
-        $e->getRouter()->setDefaultParams([
-            'poll_id' => $e->getRouteMatch()->getParam('poll_id'),
-        ]);
+        // TODO: Maybe move to route listener
+        $e->getRouter()->setDefaultParam(
+            'poll_id',
+            $e->getRouteMatch()->getParam('poll_id')
+        );
 
         return parent::onDispatch($e);
     }

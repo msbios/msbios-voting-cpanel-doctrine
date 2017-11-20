@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MSBios Voting\n"
+"POT-Creation-Date: 2017-11-20 12:45+0200\n"
+"PO-Revision-Date: 2017-11-20 12:45+0200\n"
+"Last-Translator: \n"
+"Language-Team: MSBios Team <info@msbios.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ../view\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ms-bios/voting/c-panel/doctrine/index/form.phtml:41
+msgid "Enter Code"
+msgstr "Введите код"
+
+#: ms-bios/voting/c-panel/doctrine/index/form.phtml:43
+#: ms-bios/voting/c-panel/doctrine/index/index.phtml:75
+msgid "Code"
+msgstr "Код"
+
+#: ms-bios/voting/c-panel/doctrine/index/form.phtml:50
+msgid "Enter Subject"
+msgstr "Введите тему"
+
+#: ms-bios/voting/c-panel/doctrine/index/form.phtml:52
+#: ms-bios/voting/c-panel/doctrine/index/index.phtml:74
+msgid "Subject"
+msgstr "Тема"
+
+#: ms-bios/voting/c-panel/doctrine/index/index.phtml:21
+#: ms-bios/voting/c-panel/doctrine/option/index.phtml:21
+msgid "Information message"
+msgstr "Информационное сообщение"
+
+#: ms-bios/voting/c-panel/doctrine/index/index.phtml:22
+msgid ""
+"The database is not created at the moment no vote, click \"Create new vote\" "
+"to start working with the vote."
+msgstr ""
+"База данных не создается в настоящий момент без голосования, нажмите "
+"«Создать новое голосование», чтобы начать работу с голосованием."
+
+#: ms-bios/voting/c-panel/doctrine/index/index.phtml:26
+#: ms-bios/voting/c-panel/doctrine/index/index.phtml:63
+msgid "Create new poll"
+msgstr "Создать новый опрос"
+
+#: ms-bios/voting/c-panel/doctrine/index/index.phtml:49
+#: ms-bios/voting/c-panel/doctrine/option/index.phtml:49
+msgid "Search..."
+msgstr "Поиск…"
+
+#: ms-bios/voting/c-panel/doctrine/index/index.phtml:76
+#: ms-bios/voting/c-panel/doctrine/option/index.phtml:78
+msgid "Total"
+msgstr "Всего"
+
+#: ms-bios/voting/c-panel/doctrine/index/index.phtml:77
+#: ms-bios/voting/c-panel/doctrine/option/index.phtml:79
+msgid "Created At"
+msgstr "Создано в"
+
+#: ms-bios/voting/c-panel/doctrine/index/index.phtml:78
+#: ms-bios/voting/c-panel/doctrine/option/index.phtml:80
+msgid "Modified At"
+msgstr "Изменено в"
+
+#: ms-bios/voting/c-panel/doctrine/index/index.phtml:80
+#: ms-bios/voting/c-panel/doctrine/option/index.phtml:82
+msgid "Actions"
+msgstr "Действия"
+
+#: ms-bios/voting/c-panel/doctrine/option/form.phtml:42
+msgid "Enter poll"
+msgstr "Введите опрос"
+
+#: ms-bios/voting/c-panel/doctrine/option/form.phtml:44
+#: ms-bios/voting/c-panel/doctrine/option/index.phtml:75
+msgid "Poll"
+msgstr "Опрос"
+
+#: ms-bios/voting/c-panel/doctrine/option/form.phtml:51
+msgid "Enter name"
+msgstr "Введите название"
+
+#: ms-bios/voting/c-panel/doctrine/option/form.phtml:53
+#: ms-bios/voting/c-panel/doctrine/option/index.phtml:74
+msgid "Name"
+msgstr "Название"
+
+#: ms-bios/voting/c-panel/doctrine/option/form.phtml:60
+msgid "Enter ponderability"
+msgstr "Введите весомость"
+
+#: ms-bios/voting/c-panel/doctrine/option/form.phtml:62
+#: ms-bios/voting/c-panel/doctrine/option/index.phtml:76
+msgid "Ponderability"
+msgstr "Весомость"
+
+#: ms-bios/voting/c-panel/doctrine/option/form.phtml:68
+msgid "Enter priority"
+msgstr "Введите приоритет"
+
+#: ms-bios/voting/c-panel/doctrine/option/form.phtml:70
+#: ms-bios/voting/c-panel/doctrine/option/index.phtml:77
+msgid "Priority"
+msgstr "Приоритет"
+
+#: ms-bios/voting/c-panel/doctrine/option/index.phtml:22
+msgid ""
+"The database is not created at the moment no vote option, click \"Create new "
+"vote option\" to start working with the vote option."
+msgstr ""
+"База данных не создается в настоящий момент без выбора голоса, нажмите "
+"«Создать новый вариант голосования», чтобы начать работу с вариантом "
+"голосования."
+
+#: ms-bios/voting/c-panel/doctrine/option/index.phtml:26
+#: ms-bios/voting/c-panel/doctrine/option/index.phtml:63
+msgid "Create new poll option"
+msgstr "Создать новый параметр опроса"
