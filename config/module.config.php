@@ -7,6 +7,7 @@
 
 namespace MSBios\Voting\CPanel\Doctrine;
 
+use MSBios\CPanel\Doctrine\Factory\ControllerFactory;
 use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
@@ -14,9 +15,9 @@ return [
     'controllers' => [
         'factories' => [
             Controller\IndexController::class =>
-                InvokableFactory::class,
+                ControllerFactory::class,
             Controller\OptionController::class =>
-                InvokableFactory::class,
+                ControllerFactory::class,
         ],
         'aliases' => [
             \MSBios\Voting\CPanel\Controller\IndexController::class =>
@@ -55,6 +56,7 @@ return [
                     __DIR__ . '/../themes/limitless/view/',
                 ],
                 'controller_map' => [
+                    // ...
                 ],
                 'translation_file_patterns' => [
                     [
@@ -65,6 +67,7 @@ return [
                 ],
                 'widget_manager' => [
                     'template_map' => [
+                        // ...
                     ],
                     'template_path_stack' => [
                         __DIR__ . '/../themes/limitless/widget/'

@@ -6,9 +6,10 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
+
+        'Zend\Serializer',
+        'Zend\Db',
         'Zend\Log',
-        'MSBios\Voting',
-        'MSBios\Test',
         'Zend\Mvc\Console',
         'Zend\I18n',
         'Zend\Navigation',
@@ -25,34 +26,58 @@ return [
         'Zend\Filter',
         'Zend\Validator',
         'Zend\Hydrator',
-        'DoctrineDataFixtureModule',
-        'MSBios\Form\Doctrine',
-        'MSBios\Voting\Resource\Doctrine',
-        'MSBios\Voting\Resource',
-        'MSBios\Portal\Doctrine',
-        'MSBios\Portal',
+
+        'MSBios\Cache',
+        'MSBios\Hydrator',
+        'MSBios\View',
+        'MSBios\Validator',
+        'MSBios\Db',
+        'MSBios\Form',
+        'MSBios\Voting',
+        'MSBios\Test',
         'MSBios\Application',
         'MSBios\Theme',
         'MSBios\Widget',
         'MSBios\Assetic',
-        'MSBios\I18n',
         'MSBios\Navigation',
-        'MSBios\Guard\Resource\Doctrine',
-        'MSBios\Doctrine',
-        'MSBios\Resource',
-        'MSBios\Authentication\Doctrine',
-        'MSBios\Resource\Doctrine',
-        'MSBios\CPanel',
-        'MSBios\CPanel\Doctrine',
-        'MSBios\Guard',
-        'MSBios\Guard\Resource',
-        'MSBios\Guard\CPanel',
-        'MSBios\Guard\CPanel\Doctrine',
-        'MSBios\Doctrine',
-        'MSBios\Voting\CPanel',
-        'MSBios\Voting\CPanel\Doctrine',
+
         'DoctrineModule',
         'DoctrineORMModule',
+
+        'MSBios\Doctrine',
+        'MSBios\I18n',
+        'MSBios\I18n\Doctrine',
+
+        'MSBios\Form\Doctrine',
+        'MSBios\Paginator\Doctrine',
+
+
+        'MSBios\Authentication',
+        'MSBios\Authentication\Doctrine',
+
+        'MSBios\Resource',
+        'MSBios\Resource\Doctrine',
+
+        'MSBios\Portal',
+        'MSBios\Portal\Doctrine',
+
+        'MSBios\CPanel',
+        'MSBios\CPanel\Doctrine',
+
+        'MSBios\Guard',
+        'MSBios\Guard\Doctrine',
+        'MSBios\Guard\Resource',
+        'MSBios\Guard\Resource\Doctrine',
+        'MSBios\Guard\CPanel',
+        'MSBios\Guard\CPanel\Doctrine',
+
+        'MSBios\Voting\Doctrine',
+        'MSBios\Voting\Resource',
+        'MSBios\Voting\Resource\Doctrine',
+        'MSBios\Voting\CPanel',
+        'MSBios\Voting\CPanel\Doctrine',
+        'MSBios\Voting\I18n\Resource\Doctrine',
+
         'ZendDeveloperTools',
     ],
     // These are various options for the listeners attached to the ModuleManager
